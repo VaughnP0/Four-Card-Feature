@@ -143,3 +143,7 @@ border-top: 5px solid #3da0d1;
   z-index: 3;
 
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .topcontainer {
+    width: 100%;
+    margin-top: 35px;
