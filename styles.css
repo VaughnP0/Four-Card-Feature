@@ -1,149 +1,146 @@
-h1{ color: grey;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
-  font-size: 25px;
-text-align: center;
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-h2{
-  margin-left: 10px;
-}
-
-p{
-  margin-left: 10px;
-  color: gray;
+.top-container {
+  text-align: center;
+  width: 85%;
+  margin: 20px auto;
+  padding-top: 0;
 }
 
 .line {
-  color: black;
-  font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-  text-align: center;
-}
-
-h3{
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: lighter;
-  color: gray;
+  color: hsl(234, 12%, 34%);
+}
+
+.middle {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  height: 550px;
+}
+
+.Lefty, .Righty {
+  float: left;
+  width: 31%;
+  height: 400px;
+  padding-top: 110px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box {
+  box-sizing: border-box;
+  max-width: 420px;
+  min-height: 225px;
+  margin: 25px auto;
+  padding: 15px 25px 25px 25px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 5px hsla(231, 91%, 73%, 0.3);
+}
+
+.right {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.left {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.up {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.down {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.img {
+  float: right;
+  margin-top: 3%;
+}
+
+h1 {
   text-align: center;
-  width: 40%;
-  margin: 40px auto 60px;
+  margin-top: -4px;
+  margin-bottom: 2px;
+  font-size: 1.7rem;
 }
 
-body{
-  background-color: #eaeaea;
-  height: 900px;
-  width: 1250px;
+h2 {
+  margin-top: 0;
 }
-.dots{
+
+strong {
+  display: block;
+  font-weight: 800;
+}
+
+h3 {
+  font: .08rem;
+  color: hsl(229, 6%, 66%);
+  font-weight: 200
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.05rem;
+  color: hsl(229, 6%, 66%);
+  margin: 8px 0px 8px 0px;
+  font-weight: 200;
+}
+
+footer {
   position: absolute;
-  left: -34px;
-  top: 578px;
-
+  bottom: -10%;
+  left: 40%;
 }
 
-.dot2{
-  position: absolute;
-  top: 217px;
-  right: 84px;
-  z-index: 2;
-}
-
-.lines-art{
-position: absolute;
-right: 294px;
-top:0;
-
-}
-
-.front-container{
-  position: absolute;
-  text-align: center;
-  background-color: #f9f7f7;
-  height: 850px;
-  width: 1250px;
-  margin: 150px 70px 150px 75px;
-  z-index: 2;
-}
-.supervisor{
-  height: 250px;
-  width:350px;
-background-color: white ;
-box-shadow: 0 0 14px 0 #d2ebe9;
-position: absolute;
-border-top: 5px solid #45d3d3;
-left: 41px;
-top: 379px;
-}
-.supv-img{
-  position: absolute;
-  bottom: 18px;
-  left: 257px;
-}
-.team-Builder{
-  height: 250px;
-  width:350px;
-background-color: white;
-box-shadow: 0 0 14px 0 #d2ebe9;
-position: absolute;
-border-top: 5px solid red;
-left: 435px;
-top: 212px;
-
-}
-
-.builder-img{
-  position: absolute;
-  bottom: 18px;
-  left: 257px;
-}
-.karma{
-  height: 250px;
-  width:350px;
-background-color: white;
-box-shadow: 0 0 14px 0 #d2ebe9;
-position: absolute;
-border-top: 5px solid Orange;
-left: 435px;
-top: 539px;
-}
-.karma-img{
-  position: absolute;
-  bottom: 18px;
-  left: 257px;
-}
-
-.calc {
-  height: 250px;
-  width:350px;
-background-color: white;
-box-shadow: 0 0 14px 0 #d2ebe9;
-position: absolute;
-right: 65px;
-top: 379px;
-border-top: 5px solid #3da0d1;
-
-}
-.calculator-img {
-  position: absolute;
-  bottom: 18px;
-  left: 257px;
-}
-
-
-
-
-.attribution{
-  position: relative;
-  bottom: -1130px;
-  font-size: 11px;
-  text-align: center;
-  color: hsl (228, 45%, 44%);
-  z-index: 3;
-
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .topcontainer {
+@media (min-width: 320px) and (max-width: 650px) {
+  .column {
     width: 100%;
-    margin-top: 35px;
+  }
+
+  h3{
+      font-size: 1.25rem;
+      padding-top: 20px;
+  }
+.Lefty {
+   height: 300px;
+   padding: 70px 0 0 0;
+  }
+  .Righty{
+   height: 300px;
+   padding-top: 0;
+  }
+
+  footer {
+    position: relative;
+    bottom: 5px ;
+    text-align: center;
+    width: 100%;
+    left:10%;
+  }
+
+  .text {
+    max-width: 475px;
+  }
+.img{
+    float: right;
+    margin-top: 2px;
+}
+}
+@media (mind-width 651) {
+    footer {
+    position: relative;
+    bottom: -560px ;
+    text-align: center;
+    width: 100%;
+    left:10%;
